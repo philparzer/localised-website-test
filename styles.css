@@ -1,13 +1,8 @@
-*{
-    font-family: Arial,sans-serif;
-    font-weight: bold;
-    font-size: 24px;
-    color: white;
-}
 
 body{
     background-color: #98C3D8;
 }
+
 
 h1{
     overflow: hidden;
@@ -17,6 +12,11 @@ h1{
     font-size: 9em;
 }
 
+#title{
+    size: auto;
+    padding:0;
+    width: auto;
+}
 
 #langswtch{
     align-self: center;
