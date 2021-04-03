@@ -1,0 +1,28 @@
+*{
+    font-family: Arial,sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+}
+
+body{
+    background-color: #98C3D8;
+}
+
+h1{
+    overflow: hidden;
+    transform: rotate(3deg);
+    line-height: .72em;
+    font-weight: bold;
+    font-size: 9em;
+}
+
+
+#langswtch{
+    align-self: center;
+}
+
+#dropdown{
+    position: relative;
+    margin-left: 100px;
+}
