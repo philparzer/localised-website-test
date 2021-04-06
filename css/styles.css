@@ -4,17 +4,18 @@ body{
 
 }
 
+h1 {
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+}
+
+
 .container{
     margin:0;
 }
 
-h1{
-    overflow: hidden;
-    transform: rotate(3deg);
-    line-height: .72em;
-    font-weight: bold;
-    font-size: 9em;
-}
+
 
 #english-switch{
     color:white;
@@ -40,12 +41,10 @@ h1{
     color:white;
 }
 
-.navbar-brand{
 
-    margin-right: 0;
-    margin-left: 0;
-    padding: 0;
-}
+
+
+
 
 /*BACKGROUND Anim*/
 /*credits https://codepen.io/vaibhavarora/pen/xmpxjp*/
