@@ -1,21 +1,29 @@
+
+
 body{
     overflow: hidden;
     background-color: #98C3D8;
-
 }
 
 h1 {
-    visibility: hidden;
-    width: 1px;
-    height: 1px;
+    color: white;
+    font-weight: bolder;
+    line-height: .6;
 }
 
+
+svg{
+    max-width:100%;
+}
 
 .container{
     margin:0;
 }
 
-
+.dropdown-item{
+    margin-left: 0;
+    padding:0;
+}
 
 #english-switch{
     color:white;
@@ -26,24 +34,19 @@ h1 {
 #russian-switch{
     color:white;
     padding:5px;
-
 }
 
+
 #bottom-nav{
-    height: 7%;
-    margin-left: 75%;
-    margin-right: 10%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-#dropdownId{
-    color:white;
+
+#dropdown-unrolled{
+    background: transparent;
+    border: none;
 }
-
-
-
-
 
 
 /*BACKGROUND Anim*/
