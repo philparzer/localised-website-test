@@ -20,7 +20,7 @@
 
     <!-- CSS -->
     <!-- Bootstrap first, then creator's-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 
   </head>
@@ -40,36 +40,91 @@
         </div>
       </div>
 
+      <div class="d-none d-sm-block container-fluid py-5">
+        <div class="row">
+          <div class="col-4"></div>
+          <div class="col-6">
+            <div class="prefixAnim">
+              <p>I'm</p>
+              <b>
+                <div class="subjectAnim">
+                  Philipp.<br/>
+                  eager to learn.<br/>
+                  a linguist.<br/>
+                  a developer.<br/>
+                  a creator.<br/>
+                </div>
+              </b>
+            </div>
+          </div>
+          <div class="col-2"></div>
+        </div>
+      </div>
       
-      <!-- Main Header -->
+      <!-- Main Header
 
-      <div class="d-none d-sm-block container-fluid ">
-        <div class="row justify-content-center">
-          <h1>Philipp<br>Parzer</h1>
+      <div class="d-none d-sm-block container-fluid py-5 ">
+        <div class="row text-center">
+          <h1>I'm Philipp</h1>
+        </div>
+      </div> -->
+
+
+      <div class ="container-fluid" id="Accordion">
+        <div class ="row">
+          <div class="d.none col-md"></div>
+          <div class="col-md">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne"></h2>
+                  <button id="firstCollapseButton" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    Continuous Learning Journey
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button id="secondCollapseButton" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Language and Languages
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button id="thirdCollapseButton" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Programming and Design
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d.none col-md"></div>
         </div>
       </div>
 
-
-      <!--Nav Buttons-->
-    
-      <div class="container-fluid">
-        <div class="row py-4">
-          <div class="d.none col-sm border"></div>
-          <div class="col border text-center">skill1</div>
-          <div class="col border text-center">skill2</div>
-          <div class="col border text-center">skill3</div>
-          <div class="d.none col-sm border"></div>
-        </div>
-      </div>
-
-      <!-- Text Block -->
+      <!-- Text Block 
 
       <div class ="container-fluid" id="background2">
         <div class ="row">
           <div class="d.none col-md"></div>
           <div class="col-xs-12 col-md-5">
             <div class="shadow-sm p-3 mb-5 bg-body rounded card text-white" id="mainText">
-              <img class="card-img-top" src="" alt=""> <!--currently not in use-->
+              <img class="card-img-top" src="" alt=""> currently not in use
               <div class="card-body">
                 <h4 class="card-title">TEXT</h4>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -79,33 +134,25 @@
             </div>
           </div>
           <div class="d.none col-md"></div>
-        </div>
+        </div> -->
 
 
       <!-- Socials -->
 
       <div class ="container-fluid fixed-bottom">
         <div class ="row py-4">
-          <div class="col-2"></div>
-          <div class="col text-center p-0 m-0">1</div>
-          <div class="col text-center p-0 m-0">2</div>
-          <div class="col text-center p-0 m-0">3</div>
-          <div class="col text-center p-0 m-0">4</div>
-          <div class="col text-center p-0 m-0">5</div>
-          <div class="col text-center p-0 m-0">6</div>
-          <div class="col-2"></div>
+          <div class="col-5"></div>
+          <div class="col text-center p-0 m-0">Impressum</div>
+          <div class="col text-center p-0 m-0">Legal Notice</div>
+          <div class="col-5"></div>
         </div>
       </div>
 
 
       <!-- JS -->
-      <!-- jQuery first, then Popper.js, then Bootstrap JS, then creator's-->
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-      <script src="scripts/script.js"></script>
-      
-
+      <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
     
     </div>
   </body>

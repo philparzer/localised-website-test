@@ -1,6 +1,6 @@
 *{
-    overflow: hidden;
     font-family: 'Roboto', sans-serif;
+    color: rgba(255, 255, 255, 0.753);
 }
 
 h1{
@@ -8,17 +8,45 @@ h1{
     font-weight: bold;
     color: white;
     font-size: 7em;
-    line-height: .8em;
 }
 
-#mainText{
-    background: rgba(59, 19, 12, 0.623);
-}
+
 
 
 body, html {
     height: 100%;
   }
+
+#firstCollapseButton:hover {
+    background-color: #ed416628;
+}
+
+#firstCollapseButton{
+    font-size: 20px;
+}
+
+#secondCollapseButton:hover {
+    background-color: #f2855e1f;
+}
+
+#secondCollapseButton{
+    font-size: 20px;
+}  
+
+#thirdCollapseButton:hover {
+    background-color: #f5bd5436;
+}
+
+#thirdCollapseButton{
+    font-size: 20px;
+}
+
+
+.accordion-button:after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ed4167'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+  }
+
+/*Animated Gradient Background*/
 
 #background {
     height: 100%;
@@ -27,10 +55,6 @@ body, html {
 	animation: gradient 5s ease infinite;
 }
 
-
-.card text-white bg-primary {
-    color: brown;
-}
 
 @keyframes gradient {
 	0% {
@@ -44,3 +68,90 @@ body, html {
 	}
 }
 
+
+
+
+/*Vertically Rotating Text*/
+
+
+.prefixAnim {
+    padding:0;
+    font: normal 40px/50px 'Roboto', sans-serif;
+    color: #999;
+  }
+  .prefixAnim p {
+    height: 50px;
+    float: left;
+    margin-right: 0.3em;
+  }
+  .prefixAnim b {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    height: 50px;
+    top: 0px;
+  }
+  .prefixAnim .subjectAnim {
+    display: inline-block;
+    color: #ffffff;
+    position: relative;
+    white-space: nowrap;
+    top: 0;
+    left: 0;
+  
+  
+  /*animation*/
+  -webkit-animation:move 5s;
+     -moz-animation:move 5s;
+      -ms-animation:move 5s;
+       -o-animation:move 5s;
+          animation:move 5s;
+  /*animation-iteration-count*/
+  -webkit-animation-iteration-count:infinite;
+     -moz-animation-iteration-count:infinite;
+      -ms-animation-iteration-count:infinite;
+       -o-animation-iteration-count:infinite;
+          animation-iteration-count:infinite;
+  /*animation-delay*/
+  -webkit-animation-delay:1s;
+     -moz-animation-delay:1s;
+      -ms-animation-delay:1s;
+       -o-animation-delay:1s;
+          animation-delay:1s;
+  }
+  @keyframes move{
+  0%  { top: 0px; }
+  20% { top: -50px; }
+  40% { top: -100px; }
+  60% { top: -150px; }
+  80% { top: -200px; }
+  }
+  
+  @-webkit-keyframes move {
+      0%  { top: 0px; }
+      20% { top: -50px; }
+      40% { top: -100px; }
+      60% { top: -150px; }
+      80% { top: -200px; }
+  }
+  @-moz-keyframes move {
+      0%  { top: 0px; }
+      20% { top: -50px; }
+      40% { top: -100px; }
+      60% { top: -150px; }
+      80% { top: -200px; }
+  }
+  @-o-keyframes move {
+      0%  { top: 0px; }
+      20% { top: -50px; }
+      40% { top: -100px; }
+      60% { top: -150px; }
+      80% { top: -200px; }
+  }
+  @keyframes move {
+      0%  { top: 0px; }
+      20% { top: -50px; }
+      40% { top: -100px; }
+      60% { top: -150px; }
+      80% { top: -200px; }
+  }
