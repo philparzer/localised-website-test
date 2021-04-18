@@ -1,6 +1,17 @@
 *{
+
     font-family: 'Roboto', sans-serif;
     color: rgba(255, 255, 255, 0.753);
+}
+
+a:hover{
+    color: white;
+}
+
+a{
+    font-family: 'Roboto', sans-serif;
+    color: rgba(255, 255, 255, 0.753);
+    text-decoration: none;
 }
 
 h1{
@@ -10,12 +21,10 @@ h1{
     font-size: 7em;
 }
 
-
-
-
 body, html {
     height: 100%;
   }
+
 
 #firstCollapseButton:hover {
     background-color: #ed416628;
@@ -41,6 +50,9 @@ body, html {
     font-size: 20px;
 }
 
+#seperator{
+    font-size:1.5em;
+}
 
 .accordion-button:after {
     background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ed4167'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
@@ -69,6 +81,28 @@ body, html {
 }
 
 
+/*Hover Anims*/
+
+.div-side {
+    display: inline-block;
+  }
+  
+  .div-side::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform ease .3s;
+  }
+  
+  .div-side:hover::after {
+    transform: scaleX(1);
+  }
+
+.image-block{transition:all .3s linear;-webkit-transition:all .3s linear;-moz-transition:all .3s linear}
+.image-block:hover{transform:translateY(10px) scale(1.1);position:relative;z-index:9}
+.image-block img{width:100%;border:solid 5px #fff;}
 
 
 /*Vertically Rotating Text*/
