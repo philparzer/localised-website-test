@@ -17,7 +17,10 @@ h1{
     font-size: 7em;
 }
 
-
+:focus {
+    outline: 0 !important;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+  }
 
 /*Text*/
 
@@ -39,12 +42,33 @@ a{
 
 /*Accordion*/
 
+.panel-clr {
+    color: rgba(0, 0, 0, 0.733);
+    background-color: white;
+} 
+    
+.panel-clr.on{
+    color: black;
+    outline: none;
+    background-color:#ef52642c;
+}
+
 .accordion-button:after {
     background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ed4167'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
   }
 
+.accordion-collapse .collapse {
+    background-color: #ef52642c;
+}
+
+
+.accordion-body{
+    color:white; /*TODO: when text final: push rgba(0, 0, 0, 0.733)*/
+    font-family: 'Roboto',sans-serif;
+}
+
 #firstCollapseButton:hover {
-    background-color: #ed416628;
+    background-color: #ef52642c;
 }
 
 #firstCollapseButton{
@@ -52,7 +76,7 @@ a{
 }
 
 #secondCollapseButton:hover {
-    background-color: #f2855e1f;
+    background-color: #ef52642c;
 }
 
 #secondCollapseButton{
@@ -60,12 +84,15 @@ a{
 }  
 
 #thirdCollapseButton:hover {
-    background-color: #f5bd5436;
+    background-color: #ef52642c;
 }
 
 #thirdCollapseButton{
     font-size: 20px;
 }
+
+
+
 
 /*Hover Animations*/
 .div-side {
