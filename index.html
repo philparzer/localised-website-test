@@ -22,15 +22,16 @@
     <!-- Bootstrap 5 first, then creator's-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-
+    
+    <!--Cookies-->
+    </style><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css"/>
 
   </head>
 
   <body>
+
     <div id="background" class="full-height">
       
-      
-
       <!-- Global Gateway + Logo -->
 
       <div class="container-fluid py-5">
@@ -136,28 +137,35 @@
           <div class="col-md-5"></div>
         </div>
       </div>
-
-      <!-- Cookie Banner -->
-      <div class="nk-cookie-banner alert alert-dark text-center mb-0" role="alert">
-      🍪 This website uses cookies to ensure you get the best experience on our website.
-      <a href="https://www.cookiesandyou.com/" target="blank">Learn more</a>
-      <button type="button" class="btn btn-primary btn-sm ml-3" onclick="window.nk_hideCookieAlert()">
-      I Got It
-      </button>
-      </div>
-      <!-- End of Cookie Banner -->
-      
-      <!-- JS -->
-      <script src="scripts/script.js"></script>
-      <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-      <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
     
     </div>
-  </body>
 
+    <!-- JS -->
+    <script src="scripts/script.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
     
+    <!-- Cookies -->
+    <script>
+      window.cookieconsent.initialise({
+        "palette": {
+        "popup": { "background": "black", "text": "white"},
+        "button": {"background": "#F3935A"}},
+          "theme": "classic",
+          "position": "bottom-right",
+          "content": {
+          "message": "We use cookies.",
+          "dismiss": "Got it!",
+          "link": "Learn more",
+        "href": "https://www.cookiesandyou.com/"
+        }
+      });
+    </script>
+
+  </body>
 
 </html>

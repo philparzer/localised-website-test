@@ -67,6 +67,36 @@ a{
     font-size: 20px;
 }
 
+/*Hover Animations*/
+.div-side {
+    display: inline-block;
+  }
+  
+  .div-side::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform ease .3s;
+  }
+  
+  .div-side:hover::after {
+    transform: scaleX(1);
+  }
+
+
+.image-block{
+    transition:all .3s linear;-webkit-transition:all .3s linear;-moz-transition:all .3s linear
+}
+.image-block:hover{
+    transform:translateY(10px) scale(1.1);position:relative;z-index:9
+}
+.image-block img{
+    width:100%;border:solid 5px #fff;
+}
+  
+
 /*Animated Gradient Background*/
 
 #background {
@@ -88,10 +118,6 @@ a{
 		background-position: 0% 50%;
 	}
 }
-
-/*Cookies*/
-
-.nk-cookie-banner { position: fixed; bottom: 0px; left: 0px; width: 100%; z-index: 999; border-radius: 0px; display: none; }
 
 /*Headline Anim*/
 
