@@ -78,9 +78,28 @@ a{
 
 /*Accordion*/
 
+#cppLink{
+    color:rgba(0, 0, 0, 0.733);
+    font-family: 'Roboto',sans-serif;
+    display: inline-block;
+}
+
+#cppLink:after{
+
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: #FFB980;
+    transform: scaleX(0);
+    transition: transform ease .3s;
+}
+
+#cppLink:hover::after {
+    transform: scaleX(1);
+  }
+
 .panel-clr {
     color: rgba(0, 0, 0, 0.733);
-    background-color: white;
 } 
     
 .panel-clr.on{
@@ -99,7 +118,7 @@ a{
 
 
 .accordion-body{
-    color:white; /*TODO: when text final: push rgba(0, 0, 0, 0.733)*/
+    color:rgba(0, 0, 0, 0.733);
     font-family: 'Roboto',sans-serif;
 }
 
