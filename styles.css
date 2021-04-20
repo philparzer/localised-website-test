@@ -13,7 +13,7 @@ h1{
     font-weight: bold;
     padding-top: 5px;
     letter-spacing: .2px;
-    padding-left: 10px;
+    padding-left: 7px;
     padding-bottom: 0;
     margin-bottom: 0;
 }
@@ -21,14 +21,7 @@ h1{
 .aboutH1{
     padding-top: 40px;
 }
-#mobileVersion{
-    font-size: 10px;
-}
 
-#mobileLogo{
-    padding-bottom: 0;
-    margin-bottom: 0;
-}
 
 :focus {
     outline: 0 !important;
@@ -38,6 +31,32 @@ h1{
 #versionHistory{
     font-size: 10px;
     text-align: center;
+}
+
+/*Mobile*/
+#mobileVersion{
+    font-size: 10px;
+}
+
+#mobileLogo{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+#mobileLanguageButtonOne{
+    padding-top:2px;
+    padding-left:3px;
+    padding-right:3px;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+#mobileLanguageButtonTwo{
+    padding-top:2px;
+    padding-left:3px;
+    padding-right:3px;
+    border: 2px solid;
+    border-radius: 10px;
 }
 
 /*Socials*/
@@ -78,13 +97,17 @@ a{
 
 /*Accordion*/
 
-#cppLink{
-    color:rgba(0, 0, 0, 0.733);
+.emphasis{
+    color:#ed4167;
     font-family: 'Roboto',sans-serif;
     display: inline-block;
 }
 
-#cppLink:after{
+.emphasis:hover{
+    color: #FFB980;
+}
+
+.emphasis:after{
 
     content: '';
     display: block;
@@ -94,7 +117,7 @@ a{
     transition: transform ease .3s;
 }
 
-#cppLink:hover::after {
+.emphasis:hover::after {
     transform: scaleX(1);
   }
 
