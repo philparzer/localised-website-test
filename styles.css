@@ -8,6 +8,8 @@ body, html {
     height: 100%;
   }
 
+
+/*h1*/
 h1{
     color:white;
     font-weight: bold;
@@ -18,22 +20,18 @@ h1{
     margin-bottom: 0;
 }
 
+.hiddenH1{
+    display:none;
+}
+
 .aboutH1{
     padding-top: 40px;
 }
 
 
-:focus {
-    outline: 0 !important;
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
-  }
-
-#versionHistory{
-    font-size: 10px;
-    text-align: center;
-}
-
 /*Mobile*/
+
+
 #mobileVersion{
     font-size: 10px;
 }
@@ -45,19 +43,20 @@ h1{
 
 #mobileLanguageButtonOne{
     padding-top:2px;
-    padding-left:3px;
-    padding-right:3px;
+    padding-left:6px;
+    padding-right:6px;
     border: 2px solid;
     border-radius: 10px;
 }
 
 #mobileLanguageButtonTwo{
     padding-top:2px;
-    padding-left:3px;
-    padding-right:3px;
+    padding-left:6px;
+    padding-right:6px;
     border: 2px solid;
     border-radius: 10px;
 }
+
 
 /*Socials*/
 
@@ -94,8 +93,17 @@ a{
     text-decoration: none;
 }
 
+#versionHistory{
+    font-size: 10px;
+    text-align: center;
+}
 
 /*Accordion*/
+
+:focus {
+    outline: 0 !important;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+  }
 
 .emphasis{
     color:#ed4167;
@@ -173,6 +181,7 @@ a{
 
 
 /*Hover Animations*/
+
 .div-side {
     display: inline-block;
   }
@@ -210,6 +219,7 @@ a{
 	background-size: 400% 400%;
 	animation: gradient 5s ease infinite;
 }
+
 
 
 @keyframes gradient {
@@ -253,19 +263,19 @@ a{
     left: 0;
   
   
-  /*animation*/
+  
   -webkit-animation:move 5s;
      -moz-animation:move 5s;
       -ms-animation:move 5s;
        -o-animation:move 5s;
           animation:move 5s;
-  /*animation-iteration-count*/
+
   -webkit-animation-iteration-count:infinite;
      -moz-animation-iteration-count:infinite;
       -ms-animation-iteration-count:infinite;
        -o-animation-iteration-count:infinite;
           animation-iteration-count:infinite;
-  /*animation-delay*/
+
   -webkit-animation-delay:1s;
      -moz-animation-delay:1s;
       -ms-animation-delay:1s;
