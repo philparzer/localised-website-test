@@ -8,6 +8,13 @@ body, html {
     height: 100%;
   }
 
+hr{
+    color: #000000;
+    margin-bottom:10px;
+    margin-top: 2px;
+    margin-left: 0px;
+    margin-right: 320px;
+}
 
 /*h1*/
 h1{
@@ -28,6 +35,36 @@ h1{
     padding-top: 40px;
 }
 
+/*about.html*/
+
+
+p{
+  margin: 0;  
+}
+
+.contactText{
+    color:rgba(0, 0, 0, 0.726);
+}
+
+.contactText.emphasis{
+    color:rgba(0, 0, 0, 0.726);
+}
+
+.contactText.emphasis:hover{
+    color:#ed4167;
+    
+}
+
+.contactText.emphasis:after{
+    background-color: #ed4167;
+}
+
+.contactHeading{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color:rgba(0, 0, 0, 0.726);
+}
 
 /*Mobile*/
 
