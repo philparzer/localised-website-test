@@ -1,6 +1,6 @@
 # Personal Web Page
 
-trying my hand at webdev
+trying my hand at web dev
 ___________________________
 Possible Updates
 ___________________________
