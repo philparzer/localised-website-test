@@ -5,6 +5,6 @@ ___________________________
 Possible Updates
 ___________________________
 -   Portfolio: 
-    showcasing vector art, the game, translations, etc.
+    showcasing art, my game, translations, etc.
 -   ...
 
