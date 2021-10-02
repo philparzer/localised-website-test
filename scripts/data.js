@@ -24,7 +24,7 @@ const PROJECT_DESC = {
         title: "TBA",
         en: " a 3D rogue-like set in eastern europe",
         de: " 3D Rogue-like mit Setting in Osteuropa",
-        ru: " 3D игра «рогалик», события которой происходят в вывшом советском государстве"
+        ru: " 3D игра «рогалик», события которой происходят в бывшом советском государстве"
     }
 }
 
