@@ -10,7 +10,7 @@ const PROJECT_DESC = {
         title: "REIMHARD",
         en: " a rap battle discord bot",
         de: " ein Discord-Bot für Rap-Battles",
-        ru: " бот-организатор реп-баттлов на Дискорде"
+        ru: " бот-организатор рэп-баттлов на Дискорде"
     },
 
     wip1: {
@@ -24,7 +24,7 @@ const PROJECT_DESC = {
         title: "TBA",
         en: " a 3D rogue-like set in eastern europe",
         de: " 3D Rogue-like mit Setting in Osteuropa",
-        ru: " 3D игра «рогалик», события которого происходят в вывшом советском государстве"
+        ru: " 3D игра «рогалик», события которой происходят в вывшом советском государстве"
     }
 }
 
