@@ -156,8 +156,9 @@ a{
 }
 
 #versionHistory{
-    font-size: 10px;
+    font-size: .8em;
     text-align: center;
+    margin-top: 1em;
 }
 
 /*Accordion*/
