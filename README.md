@@ -2,7 +2,7 @@
 
 ___________________________
 
-## TODOs
+## TODOs for 1.0
 
-- implement next project button and nim
+- implement next project button
 - change data structure and html so adding more projects takes less time
