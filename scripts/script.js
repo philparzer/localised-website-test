@@ -10,6 +10,11 @@ var mobileDescriptionIndex = 0;
 let highlighted;
 let notHoveringSince = false; 
 
+try{document.getElementById("mobile-version").textContent = VERSION[document.documentElement.lang];}
+catch{}
+try{document.getElementById("versionHistory").textContent = VERSION[document.documentElement.lang];}
+catch{}
+
 const rng = (maxNum) => {
 
     return Math.floor(Math.random() * maxNum);

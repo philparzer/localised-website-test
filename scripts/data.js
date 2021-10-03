@@ -1,3 +1,9 @@
+const VERSION = {
+    en: "version 0.8",
+    de: "Version 0.8",
+    ru: "Версия 0.8"
+};
+
 const PROJECT_DESC = {
     buoy: {
         title: "BUOY",

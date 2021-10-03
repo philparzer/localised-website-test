@@ -1,10 +1,8 @@
 # Personal Web Page
 
-trying my hand at web dev
 ___________________________
-Possible Updates
-___________________________
--   Portfolio: 
-    showcasing art, my game, translations, etc.
--   ...
 
+## TODOs
+
+- implement next project button and nim
+- change data structure and html so adding more projects takes less time
