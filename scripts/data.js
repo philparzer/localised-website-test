@@ -36,7 +36,7 @@ const PROJECT_DESC = {
 
 
 const I_AM = {
-    en: ["eager to learn.", "a developer.", "a linguist.", "a translator.", "a creator.", "overthinking.", "a media guy.", "a master of all trades.", "a jack of none.", "23.", "in a hurry.", "a designer."],
-    de: ["wissbegierig.", "Entwickler.", "Linguist.", "Übersetzer.", "Creator.", "am Grübeln.", "was mit Medien.", "Allrounder.", "23.", "in Eile.", "Designer."],
-    ru: ["— любопытный.", "— разработчик.", "— лингвист.","— переводчик.","— создатель.","— мечтатель.","— работничек СМИ.","— мастер не на все руки.","— 23-летний студент.","— в спешке.", "— дизайнер."]
+    en: ["eager to learn.", "a developer.", "a linguist.", "a translator.", "a creator.", "overthinking.", "23.", "in a hurry.", "a designer."],
+    de: ["wissbegierig.", "Entwickler.", "Linguist.", "Übersetzer.", "Creator.", "am Grübeln.", "23.", "in Eile.", "Designer."],
+    ru: ["— любопытный.", "— разработчик.", "— лингвист.","— переводчик.","— создатель.","— мечтатель.","— 23-летний студент.","— в спешке.", "— дизайнер."]
 }
