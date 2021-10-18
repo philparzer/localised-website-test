@@ -130,7 +130,7 @@ const nextProject = (command) => {
         }
     }
 
-    else if (command === 'mobile' || command === "prevMobile"){
+    else if (command === 'mobile' || command === "prevMobile"  || command === 'initializeMobile'){
 
         if (command === 'mobile') {
             mobileNextProject++
@@ -156,20 +156,6 @@ const nextProject = (command) => {
         else {MOBILE_CONTAINER.children[0].setAttribute("href", PROJECT_DESC[projectProperties[mobileNextProject]].hrefLink);}
     }
 
-    else if (command === 'initiliazeMobile'){
-        DESCRIPTION_TEXT_MOBILE.textContent = PROJECT_DESC[projectProperties[mobileNextProject]].title;
-        DESCRIPTION_BODY_MOBILE.textContent = PROJECT_DESC[projectProperties[mobileNextProject]][document.documentElement.lang];
-
-        if (document.documentElement.lang !== 'en'){MOBILE_CONTAINER.children[0].children[0].setAttribute("src", `.${PROJECT_DESC[projectProperties[mobileNextProject]].srcImg}`);} 
-        else {MOBILE_CONTAINER.children[0].children[0].setAttribute("src", PROJECT_DESC[projectProperties[mobileNextProject]].srcImg);}
-
-        if (PROJECT_DESC[projectProperties[mobileNextProject]].WIP) {MOBILE_CONTAINER.children[0].removeAttribute("href"); MOBILE_CONTAINER.children[0].removeAttribute("target"); MOBILE_CONTAINER.children[0].className = "wip"}
-        else {MOBILE_CONTAINER.children[0].setAttribute("target", "_blank"); MOBILE_CONTAINER.children[0].className = ""}
-
-        if (PROJECT_DESC[projectProperties[mobileNextProject]].hrefLink.startsWith('./') && document.documentElement.lang !== 'en') {MOBILE_CONTAINER.children[0].setAttribute("href", `.${PROJECT_DESC[projectProperties[mobileNextProject]].hrefLink}`);}
-        else {MOBILE_CONTAINER.children[0].setAttribute("href", PROJECT_DESC[projectProperties[mobileNextProject]].hrefLink);}
-    }
-
     else if (command === 'initializeDesktop') {
         for (let o = 0; o < projectContainers.length ; o++){
             projectContainers[o].children[0].children[0].id = projectProperties[o];
@@ -187,7 +173,7 @@ const nextProject = (command) => {
 }
 
 //initialize mobile project
-nextProject('initiliazeMobile');
+nextProject('initializeMobile');
 nextProject('initializeDesktop');
 
 setTimeout(() => {updateHeadline(document.documentElement.lang)},1000)
