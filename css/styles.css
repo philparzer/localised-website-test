@@ -309,8 +309,11 @@ a{
 	}
 }
 
-/*Headline Anim*/
+.wip{
+    cursor:wait;
+}
 
+/*Headline Anim*/
 
 .prefixAnim {
     padding:0;
@@ -417,7 +420,12 @@ a{
   }
 
   .arrow:hover {
-      cursor:not-allowed;
+    cursor: pointer;
+    
+  }
+
+  .arrow:hover > #arrow-box > #arrow-svg{
+      fill: #FAFAFA!important
   }
 
 

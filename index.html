@@ -135,7 +135,7 @@
           <div class="col-md col-lg-6">
             <div class="row">
               <div class="col-md-2"></div>
-              <div class="col-md-8 text-center"><span id="projects-mobile">PROJECTS</span></div>
+              <div class="col-md-8 text-center"><span id="projects-mobile" >PROJECTS</span></div>
               <div class="col-md-2"></div>
             </div>
           </div>
@@ -148,31 +148,18 @@
         <div class ="row mt-5">
         <div class ="col-12">
           <div id="carouselExampleIndicators" class="carousel" data-interval="false">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-            </ol>
+            <ol class="carousel-indicators"></ol>
             <div class="carousel-inner">
-                <div id="mobile-proj-0" class="carousel-item active text-center">
-                    <a href="https://buoy-productivity.com/" target="_blank"><img width="30%" src="./img/buoy.png" alt="First slide"></a>
+                <div id="mobile-proj" class="carousel-item active text-center"> <!--pulls from data.js-->
+                    <a href="" target="_blank"><img width="30%" src="" alt="First slide"></img></a>
                 </div>
-                <div id="mobile-proj-1" class="carousel-item text-center">
-                  <a href="https://github.com/philparzer/reimhard" target="_blank"><img width="30%" src="./img/reimhard.png" alt="Second slide"></a>
-                </div>
-                <div id="mobile-proj-2" class="carousel-item text-center">
-                  <img width="30%" src="./img/wip1.png" alt="Third slide">
-                </div>
-                <div id="mobile-proj-3" class="carousel-item text-center">
-                  <img width="30%" src="./img/wip2.png" alt="Fourth slide">
-                </div> <!--TODO: add more-->
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" onclick="mobileBtn('prev')">
+
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" onclick="nextProject('prevMobile')">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only"></span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" onclick="mobileBtn('next')">
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" onclick="nextProject('mobile')">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only"></span>
             </a>
@@ -184,7 +171,7 @@
     <div class ="d-block d-md-none container">
       <div class ="row pt-5">
         <div class ="col-12 text-center">
-          <span id="mobile-description-text">BUOY</span> <span id="mobile-description-body">a desktop productivity app</span>
+          <span id="mobile-description-text"></span><span id="mobile-description-body"></span>
         </div>
       </div>
     </div>
@@ -204,30 +191,32 @@
           <div class="col-xl col-xxl-6">
             <div class="row">
               <div class="col-md-2"></div>
-              <div  class="col-md-2"> <!--TODO: implement button and animation when more than 4 projects-->
+              <div id="proj-container-1" class="col-md-2">
                 <a href="https://buoy-productivity.com/" target="_blank"><img id="buoy" class="unhighlighted-project" onmouseover="highlight(this)" onmouseleave="fadeOut()" width="70%" src="./img/buoy.png"></img></a>
               </div>
-              <div  class="col-md-2">
+              <div id="proj-container-2" class="col-md-2">
                 <a href="https://github.com/philparzer/reimhard" target="_blank"><img id="reimhard" class="unhighlighted-project" onmouseover="highlight(this)" onmouseleave="fadeOut()" width="70%" src="./img/reimhard.png"></img></a>
               </div>
-              <div  class="col-md-2">
-                <!--TODO:<a href="#" target="_blank">--><img id="wip1" class="unhighlighted-project" onmouseover="highlight(this)" onmouseleave="fadeOut()" width="70%" src="./img/wip1.png"></img></a>
+              <div id="proj-container-3" class="col-md-2">
+                <a href="#" target="_blank"><img id="wip1" class="unhighlighted-project" onmouseover="highlight(this)" onmouseleave="fadeOut()" width="70%" src="./img/wip1.png"></img></a>
               </div>
-              <div  class="col-md-2" >
-                <!--TODO:<a href="#" target="_blank">--><img id="wip2" class="unhighlighted-project" onmouseover="highlight(this)" onmouseleave="fadeOut()" width="70%" src="./img/wip2.png"></img>
+              <div id="proj-container-4" class="col-md-2" >
+                <a href="#" target="_blank"><img id="wip2" class="unhighlighted-project" onmouseover="highlight(this)" onmouseleave="fadeOut()" width="70%" src="./img/wip2.png"></img></a>
               </div>
               <div class="col-md-1 ">
                 <div class="row h-25"><div class="col-12"></div></div>
                 <div class="row h-50 d-flex">
                   <div class="col-12 text-left arrow">
-                    <svg id="arrow-svg" style="width: 100%; fill:#FBD5D9" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24"fill-rule="evenodd" clip-rule="evenodd">style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-                    <g transform="matrix(1,0,0,1,5.55112e-17,-4)">
-                      <path d="M21.883,12L14.356,18.235L15,19L24,11.479L15,4L14.355,4.764L21.884,11L0,11L0,12L21.883,12Z"/>
-                      <g transform="matrix(0.502894,0,0,0.502894,-2.26782,6.05644)">
-                          <text x="4.14px" y="8.908px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">soon</text>
-                      </g>
-                      </g>
-                    </svg>
+                    <a id="arrow-box" onclick="nextProject('desktop')">
+                      <svg id="arrow-svg" style="width: 100%; fill:#FBD5D9" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24"fill-rule="evenodd" clip-rule="evenodd">
+                      <g transform="matrix(1,0,0,1,5.55112e-17,-4)">
+                        <path d="M21.883,12L14.356,18.235L15,19L24,11.479L15,4L14.355,4.764L21.884,11L0,11L0,12L21.883,12Z"/>
+                        <g transform="matrix(0.502894,0,0,0.502894,-2.26782,6.05644)">
+                            <text x="4.14px" y="8.908px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;"></text>
+                        </g>
+                        </g>
+                      </svg>
+                    </a>
                 </div>
                 <div class="row h-25"></div></div>
               </div>
