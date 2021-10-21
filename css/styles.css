@@ -513,4 +513,22 @@ a{
     to   { opacity: 0; }
 }
 
+/* @media screen and (max-height: 760px){
+    #headline-container{
+        display: none!important;
+    }
+} */
+
+@media screen and (max-height: 400px){
+    #top-row, #headline-container, #bottom-row{
+        display: none!important;
+    }
+}
+
+
+@media screen and (max-height: 700px){
+    #top-row{
+        display: none!important;
+    }
+}
 
