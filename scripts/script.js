@@ -174,12 +174,36 @@ const nextProject = (command) => {
 
 //initialize mobile project
 nextProject('initializeMobile');
+
+//initialize desktop project
 nextProject('initializeDesktop');
 
+//sets text for animated headline
 setTimeout(() => {updateHeadline(document.documentElement.lang)},1000)
 
 
+//initializes mousewheel listener to go to next project
+let lastKnownScrollPosition = 0;
+let ticking = false;
 
+function doSomething(wheelIn) {
+  if (wheelIn === 100){
+      nextProject("desktop");
+  }
+}
+
+document.addEventListener('wheel', function(e) {
+  lastKnownScrollPosition = e.deltaY;
+
+  if (!ticking) {
+    window.requestAnimationFrame(function() {
+      doSomething(lastKnownScrollPosition);
+      ticking = false;
+    });
+
+    ticking = true;
+  }
+});
 
 
 console.log(`\`
