@@ -34,7 +34,7 @@ const PROJECT_DESC = { //in descending display order
         title: "ZEBRA-PIONEERS",
         en: " a NFT drop featuring 6 animated zebras",
         de: " NFT-Kollektion mit 6 animierten Zebras",
-        ru: " коллекция аннимированных зебр-NFT-токенов",
+        ru: " коллекция анимированных зебр-NFT-токенов",
         hrefLink: "https://opensea.io/collection/zebra-pioneers",
         srcImg: "./img/zebra-pioneers.png",
         WIP: false
@@ -82,7 +82,7 @@ const PROJECT_DESC = { //in descending display order
 
     wip2: {
         title: "TBA",
-        en: " a 3D rogue-like set in eastern europe",
+        en: " a 3D rogue-like set in Eastern Europe",
         de: " 3D-Rogue-like mit Setting in Osteuropa",
         ru: " 3D игра «рогалик», события которой происходят в бывшом советском государстве",
         hrefLink: "#",
