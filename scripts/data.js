@@ -92,7 +92,7 @@ const PROJECT_DESC = { //in descending display order
 
     wip3: {
         title: "TBA",
-        en: " a 3D environment for distance learning and working",
+        en: " a 3D environment for distance learning and working from home",
         de: " 3D-Plattform für Homeoffice und Distance Learning",
         ru: " 3D платформа, позволяющая работать и учиться из дома",
         hrefLink: "#",
