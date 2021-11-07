@@ -28,6 +28,7 @@ const SHOWCASE_4 = document.getElementById("showcase-4");
 const getCurrentShowcase = (e) => {
     e.preventDefault();
 
+    
     let imgSrc; 
     try{imgSrc = e.target.children[0].children[0].attributes.src.value;}
     catch{imgSrc = e.target.attributes.src.value}
@@ -36,7 +37,6 @@ const getCurrentShowcase = (e) => {
     let splitPathWoutExtension = splitPath.slice(0, imgSrc.length - 4);
     splitPathWoutExtension.push("-showcase/");
     let rightClickSourceFolder = splitPathWoutExtension.join("");
-    console.log(rightClickSourceFolder);
     $('#project-modal').modal('show');
 
     SHOWCASE_1.attributes.src.value = rightClickSourceFolder + 1 + ".png";
@@ -51,25 +51,31 @@ PROJECT_CONTAINER_1.addEventListener("contextmenu", (e) => getCurrentShowcase(e)
 PROJECT_CONTAINER_2.addEventListener("contextmenu", (e) => getCurrentShowcase(e));
 PROJECT_CONTAINER_3.addEventListener("contextmenu", (e) => getCurrentShowcase(e));
 PROJECT_CONTAINER_4.addEventListener("contextmenu", (e) => getCurrentShowcase(e));
-
+MOBILE_CONTAINER.addEventListener("contextmenu", (e) => getCurrentShowcase(e));
 
 //add right click tooltip to PROJECTS span
 const rightClickTooltip = (isCurrentlyProject) => {
     let desktopText = document.getElementById("projects-desktop");
+    let mobileText = document.getElementById("projects-mobile");
 
     desktopText.className = "fade-out";
-    
+    mobileText.className = "fade-out";
     setTimeout(() => {
         desktopText.className = "fade-in";
+        mobileText.className = "fade-in";
         desktopText.innerHTML = TOOLTIP.rightClickTooltip[document.documentElement.lang];
+        mobileText.innerHTML = TOOLTIP.tapHoldTooltip[document.documentElement.lang];
 
         setTimeout(() => {
-            desktopText.className = "fade-out"
+            desktopText.className = "fade-out";
+            mobileText.className = "fade-out";
         }, 3000)
     
         setTimeout(() => {
             desktopText.className = "fade-in";
+            mobileText.className = "fade-in";
             desktopText.innerHTML = TOOLTIP.projects[document.documentElement.lang];
+            mobileText.innerHTML = TOOLTIP.projects[document.documentElement.lang];
         }, 4000)
 
     }, 1000)

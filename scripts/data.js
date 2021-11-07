@@ -15,7 +15,13 @@ const TOOLTIP = {
     rightClickTooltip: {
         en: "TRY RIGHT CLICK",
         de: "RECHTSKLICKEN",
-        ru: "ЩЕЛКНИТЕ ПРАВОЙ КНОПКОЙ"
+        ru: "ЩЁЛКНИТЕ ПРАВОЙ КНОПКОЙ"
+    },
+
+    tapHoldTooltip: {
+        en: "TAP AND HOLD",
+        de: "GEDRÜCKT HALTEN",
+        ru: "НАЖМИТЕ И УДЕРЖИВАЙТЕ"
     }
 }
 
