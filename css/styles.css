@@ -463,8 +463,23 @@ a{
 
 #headline-0, #headline-1, #headline-2, #headline-3 {
     color: #FAFAFA!important;
-} 
+}
 
+
+#project-modal-content{
+    background-color: transparent;
+    border: none;
+}
+
+
+#next-proj-showcase-btn{
+    border: solid 1px #c34545;
+}
+
+.modal-backdrop
+{
+    opacity:0.7 !important;
+}
 
 @keyframes fadein {
     from { opacity: 0; }

@@ -15,17 +15,88 @@ const PROJECT_CONTAINER_1 = document.getElementById("proj-container-1");
 const PROJECT_CONTAINER_2 = document.getElementById("proj-container-2");
 const PROJECT_CONTAINER_3 = document.getElementById("proj-container-3");
 const PROJECT_CONTAINER_4 = document.getElementById("proj-container-4");
+const SHOWCASE_1 = document.getElementById("showcase-1");
+const SHOWCASE_2 = document.getElementById("showcase-2");
+const SHOWCASE_3 = document.getElementById("showcase-3");
+const SHOWCASE_4 = document.getElementById("showcase-4");
+
+
+
+//TODO: add images
+//TODO: look into mobile
+//TODO: update htmls of different language versions
+const getCurrentShowcase = (e) => {
+    e.preventDefault();
+
+    let imgSrc; 
+    try{imgSrc = e.target.children[0].children[0].attributes.src.value;}
+    catch{imgSrc = e.target.attributes.src.value}
+
+    let splitPath = imgSrc.split("")
+    let splitPathWoutExtension = splitPath.slice(0, imgSrc.length - 4);
+    splitPathWoutExtension.push("-showcase/");
+    let rightClickSourceFolder = splitPathWoutExtension.join("");
+    console.log(rightClickSourceFolder);
+    $('#project-modal').modal('show');
+
+    SHOWCASE_1.attributes.src.value = rightClickSourceFolder + 1 + ".png";
+    SHOWCASE_2.attributes.src.value = rightClickSourceFolder + 2 + ".png";
+    SHOWCASE_3.attributes.src.value = rightClickSourceFolder + 3 + ".png";
+    SHOWCASE_4.attributes.src.value = rightClickSourceFolder + 4 + ".png";
+
+}
+
+//trigger bootstrap modal #project-modal on right clicking project_Container_1
+PROJECT_CONTAINER_1.addEventListener("contextmenu", (e) => getCurrentShowcase(e));
+PROJECT_CONTAINER_2.addEventListener("contextmenu", (e) => getCurrentShowcase(e));
+PROJECT_CONTAINER_3.addEventListener("contextmenu", (e) => getCurrentShowcase(e));
+PROJECT_CONTAINER_4.addEventListener("contextmenu", (e) => getCurrentShowcase(e));
+
+
+//add right click tooltip to PROJECTS span
+const rightClickTooltip = (isCurrentlyProject) => {
+    let desktopText = document.getElementById("projects-desktop");
+
+    desktopText.className = "fade-out";
+    
+    setTimeout(() => {
+        desktopText.className = "fade-in";
+        desktopText.innerHTML = TOOLTIP.rightClickTooltip[document.documentElement.lang];
+
+        setTimeout(() => {
+            desktopText.className = "fade-out"
+        }, 3000)
+    
+        setTimeout(() => {
+            desktopText.className = "fade-in";
+            desktopText.innerHTML = TOOLTIP.projects[document.documentElement.lang];
+        }, 4000)
+
+    }, 1000)
+
+    setTimeout(() => {
+        rightClickTooltip(!isCurrentlyProject);
+    }, 15000)
+}
+
+setTimeout(() => {
+    rightClickTooltip(true);
+}, 5000)
+
+
 
 try{document.getElementById("mobile-version").textContent = VERSION[document.documentElement.lang];}
 catch{}
 try{document.getElementById("versionHistory").textContent = VERSION[document.documentElement.lang];}
 catch{}
 
+//creates a floored randomNum
 const rng = (maxNum) => {
 
     return Math.floor(Math.random() * maxNum);
 }
 
+//updates I am ... headline
 const updateHeadline = (lang) => {
 
     setTimeout(() => {
@@ -50,7 +121,7 @@ const updateHeadline = (lang) => {
 }
 
 
-
+//handles project hovering
 const highlight = (project) => {
 
         notHoveringSince = false;
@@ -81,6 +152,7 @@ const highlight = (project) => {
         project.className = "highlighted-project";
 }
 
+//handles fadeing out of project description text
 const fadeOut = () => {
 
     notHoveringSince = true;
@@ -104,18 +176,19 @@ const fadeOut = () => {
     }, 5000)
 }
 
+//handles project containers
 const nextProject = (command) => {
-    
+
     let projectProperties = Object.getOwnPropertyNames(PROJECT_DESC);
 
+    //TODO: think about if order should be inverted so that new project shows up on right side (next to arrow)
     let projectContainers = [PROJECT_CONTAINER_1, PROJECT_CONTAINER_2, PROJECT_CONTAINER_3, PROJECT_CONTAINER_4]
 
-
-    
     if (command === 'desktop') {
+        
         for (let m = 0; m < projectContainers.length; m++){
-            let nextProject = projectProperties.indexOf(projectContainers[m].children[0].children[0].id) -1
-            if (nextProject < 0) {nextProject = projectProperties.length-1}
+            let nextProject = projectProperties.indexOf(projectContainers[m].children[0].children[0].id) +1
+            if (nextProject === projectProperties.length) {nextProject = 0}
 
             projectContainers[m].children[0].children[0].id = projectProperties[nextProject];
 
@@ -158,6 +231,7 @@ const nextProject = (command) => {
 
     else if (command === 'initializeDesktop') {
         for (let o = 0; o < projectContainers.length ; o++){
+            
             projectContainers[o].children[0].children[0].id = projectProperties[o];
 
             if (document.documentElement.lang !== 'en') {projectContainers[o].children[0].children[0].setAttribute("src", `.${PROJECT_DESC[projectProperties[o]].srcImg}`)}
@@ -204,7 +278,6 @@ document.addEventListener('wheel', function(e) {
     ticking = true;
   }
 });
-
 
 console.log(`\`
 MMMMMMMMMd\/                                                                                         

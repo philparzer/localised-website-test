@@ -4,6 +4,24 @@ const VERSION = {
     ru: "Версия 0.9"
 };
 
+const TOOLTIP = {
+    
+    projects: {
+        en: "PROJECTS",
+        de: "PROJEKTE",
+        ru: "ПРОЕКТЫ"
+    },
+    
+    rightClickTooltip: {
+        en: "TRY RIGHT CLICK",
+        de: "RECHTSKLICKEN",
+        ru: "ЩЕЛКНИТЕ ПРАВОЙ КНОПКОЙ"
+    }
+}
+
+
+
+
 const PROJECT_DESC = { //in descending display order
 
     zebras: {
