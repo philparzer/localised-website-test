@@ -1,7 +1,7 @@
 const VERSION = {
-    en: "version 0.9",
-    de: "Version 0.9",
-    ru: "Версия 0.9"
+    en: "version 1.0",
+    de: "Version 1.0",
+    ru: "Версия 1.0"
 };
 
 const TOOLTIP = {
