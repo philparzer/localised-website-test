@@ -20,7 +20,7 @@ const SHOWCASE_2 = document.getElementById("showcase-2");
 const SHOWCASE_3 = document.getElementById("showcase-3");
 const SHOWCASE_4 = document.getElementById("showcase-4");
 
-
+let projectsLeft;
 
 //TODO: add images
 //TODO: look into mobile
@@ -191,7 +191,7 @@ const nextProject = (command) => {
     let projectContainers = [PROJECT_CONTAINER_1, PROJECT_CONTAINER_2, PROJECT_CONTAINER_3, PROJECT_CONTAINER_4]
 
     if (command === 'desktop') {
-        
+
         for (let m = 0; m < projectContainers.length; m++){
             let nextProject = projectProperties.indexOf(projectContainers[m].children[0].children[0].id) +1
             if (nextProject === projectProperties.length) {nextProject = 0}
@@ -236,6 +236,7 @@ const nextProject = (command) => {
     }
 
     else if (command === 'initializeDesktop') {
+
         for (let o = 0; o < projectContainers.length ; o++){
             
             projectContainers[o].children[0].children[0].id = projectProperties[o];
@@ -270,6 +271,8 @@ function doSomething(wheelIn) {
   if (wheelIn === 100){
       nextProject("desktop");
   }
+
+  //TODO: maybe implement prev scroll
 }
 
 document.addEventListener('wheel', function(e) {

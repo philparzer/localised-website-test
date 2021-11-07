@@ -83,10 +83,20 @@ const PROJECT_DESC = { //in descending display order
     wip2: {
         title: "TBA",
         en: " a 3D rogue-like set in eastern europe",
-        de: " 3D Rogue-like mit Setting in Osteuropa",
+        de: " 3D-Rogue-like mit Setting in Osteuropa",
         ru: " 3D игра «рогалик», события которой происходят в бывшом советском государстве",
         hrefLink: "#",
         srcImg: "./img/wip2.png",
+        WIP: true
+    },
+
+    wip3: {
+        title: "TBA",
+        en: " a 3D environment for distance learning and working",
+        de: " 3D-Plattform für Homeoffice und Distance Learning",
+        ru: " 3D платформа, позволяющая работать и учиться из дома",
+        hrefLink: "#",
+        srcImg: "./img/wip3.png",
         WIP: true
     }
 }
