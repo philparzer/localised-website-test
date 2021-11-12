@@ -466,8 +466,17 @@ a{
 }
 
 
-#project-modal-content{
+#project-modal-content {
     background-color: transparent;
+    border: none;
+}
+
+#rotate-modal{
+    background-color: black;
+}
+
+#rotate-modal-content {
+    background-color: black;
     border: none;
 }
 
@@ -478,7 +487,7 @@ a{
 
 .modal-backdrop
 {
-    opacity:0.7 !important;
+    opacity: 0.7 !important;
 }
 
 @keyframes fadein {

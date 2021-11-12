@@ -46,7 +46,7 @@ const getCurrentShowcase = (e) => {
 
 }
 
-//trigger bootstrap modal #project-modal on right clicking project_Container_1
+//trigger bootstrap modal #project-modal on right clicking project_Containers
 PROJECT_CONTAINER_1.addEventListener("contextmenu", (e) => getCurrentShowcase(e));
 PROJECT_CONTAINER_2.addEventListener("contextmenu", (e) => getCurrentShowcase(e));
 PROJECT_CONTAINER_3.addEventListener("contextmenu", (e) => getCurrentShowcase(e));
@@ -267,7 +267,7 @@ setTimeout(() => {updateHeadline(document.documentElement.lang)},1000)
 let lastKnownScrollPosition = 0;
 let ticking = false;
 
-function doSomething(wheelIn) {
+function scrollProjects(wheelIn) {
   if (wheelIn === 100){
       nextProject("desktop");
   }
@@ -280,13 +280,38 @@ document.addEventListener('wheel', function(e) {
 
   if (!ticking) {
     window.requestAnimationFrame(function() {
-      doSomething(lastKnownScrollPosition);
+      scrollProjects(lastKnownScrollPosition);
       ticking = false;
     });
 
     ticking = true;
   }
 });
+
+var screenOrientation = (screen.orientation || {}).type || screen.mozOrientation || screen.msOrientation;
+
+if (screenOrientation !== "portrait-primary" || screenOrientation !== "portrait-secondary")
+{
+   
+}
+
+//handle orientation change
+window.addEventListener('orientationchange', function(e) {
+
+    console.log(screen.orientation.type)
+
+        if(screen.orientation.type !== "portrait-primary" && screen.orientation.type !== "portrait-secondary") 
+        {
+            $('#rotate-modal').modal('show');
+        }
+        
+        
+        else {
+            $('#rotate-modal').modal('hide');
+        }
+});
+
+
 
 console.log(`\`
 MMMMMMMMMd\/                                                                                         
