@@ -312,6 +312,43 @@ window.addEventListener('orientationchange', function(e) {
 });
 
 
+//react to swipe
+let touchstartX = 0;
+let touchendX = 0;
+
+function handleSwipe() {
+  if (touchendX + 50 < touchstartX) {//swipe left
+
+    if ($('#project-modal').is(':visible')){//if in showcase modal swipe images
+        $("#modal-next-btn").click();
+    }
+
+    else {//else swipe projects
+        $("#carousel-next-btn").click();
+    }
+
+  }
+
+  if (touchendX - 50 > touchstartX) {//swipe right
+    if ($('#project-modal').is(':visible')){//if in showcase modal swipe images
+        $("#modal-prev-btn").click();
+    }
+
+    else {//else swipe projects
+        $("#carousel-prev-btn").click();
+    }
+
+  }
+}
+
+document.addEventListener('touchstart', e => {
+  touchstartX = e.changedTouches[0].screenX;
+})
+
+document.addEventListener('touchend', e => {
+  touchendX = e.changedTouches[0].screenX;
+  handleSwipe()
+})
 
 console.log(`\`
 MMMMMMMMMd\/                                                                                         
