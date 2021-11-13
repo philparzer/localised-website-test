@@ -6,11 +6,7 @@
 
 body, html {
     height: 100%;
-    padding: 
-        env(safe-area-inset-top)
-        env(safe-area-inset-right)
-        env(safe-area-inset-bottom)
-        env(safe-area-inset-left)!important;
+    
     -webkit-user-select: none;
     -webkit-touch-callout: none;
   }
@@ -300,6 +296,11 @@ a{
 	background: linear-gradient(-15deg, #f5bc54, #ed4167, #f5bc54);
 	background-size: 400% 400%;
 	animation: gradient 5s ease infinite;
+    padding: 
+        env(safe-area-inset-top)
+        env(safe-area-inset-right)
+        env(safe-area-inset-bottom)
+        env(safe-area-inset-left);
 }
 
 
