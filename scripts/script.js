@@ -22,9 +22,12 @@ const SHOWCASE_4 = document.getElementById("showcase-4");
 
 let projectsLeft;
 
-//TODO: add images
-//TODO: look into mobile
-//TODO: update htmls of different language versions
+//disable carousel autoslide for all carousel elemnts
+$('.carousel').carousel({
+    interval: false,
+});
+
+//handle showcases (image descriptions of projects)
 const getCurrentShowcase = (e) => {
     e.preventDefault();
 
