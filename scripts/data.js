@@ -30,6 +30,16 @@ const TOOLTIP = {
 
 const PROJECT_DESC = { //in descending display order
 
+    hemnes: {
+        title: "HEMNES-UPGRADES",
+        en: " 3D printable upgrades for IKEA Hemnes beds",
+        de: " 3D-gedruckte Erweiterungen für IKEA Hemnes Betten",
+        ru: " 3D-печатные модификации для кровати «IKEA Hemnes»",
+        hrefLink: "https://github.com/philparzer/ikea-hemnes-upgrades",
+        srcImg: "./img/hemnes-upgrades.png",
+        WIP: false
+    },
+
     zebras: {
         title: "ZEBRA-PIONEERS",
         en: " a NFT drop featuring 6 animated zebras",
@@ -50,16 +60,6 @@ const PROJECT_DESC = { //in descending display order
         WIP: false
     },
 
-    reimhard: {
-        title: "REIMHARD",
-        en: " a rap battle discord bot",
-        de: " ein Discord-Bot für Rap-Battles",
-        ru: " бот-организатор рэп-баттлов на дискорде",
-        hrefLink: "https://github.com/philparzer/reimhard",
-        srcImg: "./img/reimhard.png",
-        WIP: false
-    },
-
     spi: {
         title: "SPI",
         en: " a translation of Victor Pelevin's short story 'Spi' into German",
@@ -69,6 +69,17 @@ const PROJECT_DESC = { //in descending display order
         srcImg: "./img/spi.png",
         WIP: false
     },
+
+    reimhard: {
+        title: "REIMHARD",
+        en: " a rap battle discord bot",
+        de: " ein Discord-Bot für Rap-Battles",
+        ru: " бот-организатор рэп-баттлов на дискорде",
+        hrefLink: "https://github.com/philparzer/reimhard",
+        srcImg: "./img/reimhard.png",
+        WIP: true
+    },
+
 
     wip1: {
         title: "TBA",
