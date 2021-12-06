@@ -143,38 +143,43 @@
         </div>
       </div>
 
-        <!--MOBILE CAROUSEL-->
-        <div class ="d-block d-md-none container">
-          <div class ="row mt-5">
-          <div class ="col-12">
-            <div id="carouselExampleIndicators" class="carousel" data-interval="false">
-              <ol class="carousel-indicators"></ol>
-              <div class="carousel-inner">
-                  <div id="mobile-proj" class="carousel-item active text-center"> <!--pulls from data.js-->
-                      <a href="" target="_blank"><img width="30%" src="" alt="First slide"></img></a>
-                  </div>
-              </div>
-  
-              <a id="carousel-prev-btn" class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" onclick="nextProject('prevMobile')">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only"></span>
-              </a>
-              <a id="carousel-next-btn" class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" onclick="nextProject('mobile')">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only"></span>
-              </a>
-          </div>
-          </div>
-        </div>
-      </div>
-      <!--MOBILE Description-->
+      <!--MOBILE CAROUSEL-->
       <div class ="d-block d-md-none container">
-        <div class ="row pt-5">
-          <div class ="col-12 text-center">
-            <span id="mobile-description-text"></span><span id="mobile-description-body"></span>
-          </div>
+        <div class ="row mt-5">
+        <div class ="col-12">
+          <div id="carouselExampleIndicators" class="carousel" data-interval="false">
+            <ol class="carousel-indicators"></ol>
+            <div class="carousel-inner">
+                <div id="mobile-proj" class="carousel-item active text-center"> <!--pulls from data.js-->
+                    <a href="" target="_blank"><img width="30%" src="" alt="First slide"></img></a>
+                    <div onclick="getCurrentShowcaseMobile(this)" class="pt-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#FBD5D9" width="24" height="24" viewBox="0 0 24 24"><path d="M9 12c0-.552.448-1 1.001-1s.999.448.999 1-.446 1-.999 1-1.001-.448-1.001-1zm6.2 0l-1.7 2.6-1.3-1.6-3.2 4h10l-3.8-5zm5.8-7v-2h-21v15h2v-13h19zm3 2v14h-20v-14h20zm-2 2h-16v10h16v-10z"/></svg>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <a id="carousel-prev-btn" class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" onclick="nextProject('prevMobile')">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only"></span>
+            </a>
+            <a id="carousel-next-btn" class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" onclick="nextProject('mobile')">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only"></span>
+            </a>
+        </div>
         </div>
       </div>
+    </div>
+    <!--MOBILE Description-->
+    <div class ="d-block d-md-none container">
+      <div class ="row pt-4">
+        <div class ="col-12 text-center">
+          <span id="mobile-description-text"></span><span id="mobile-description-body"></span>
+        </div>
+      </div>
+    </div>
        <!--MOBILE Socials-->
       <div class ="d-block d-md-none container">
         <div class ="row pt-4">
