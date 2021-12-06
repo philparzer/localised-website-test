@@ -19,9 +19,9 @@ const TOOLTIP = {
     },
 
     tapHoldTooltip: {
-        en: "TAP AND HOLD",
-        de: "GEDRÜCKT HALTEN",
-        ru: "НАЖМИТЕ И УДЕРЖИВАЙТЕ"
+        en: "TAP",
+        de: "TIPPEN",
+        ru: "НАЖМИТЕ"
     }
 }
 

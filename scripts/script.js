@@ -37,6 +37,22 @@ const getCurrentShowcase = (e) => {
     catch{imgSrc = e.target.attributes.src.value}
 
     let splitPath = imgSrc.split("")
+    setShowcaseContent(imgSrc, splitPath);
+
+}
+
+
+const getCurrentShowcaseMobile = (element) => {
+    console.log(element)
+    let mobileImgSrc; 
+    mobileImgSrc = element.parentElement.parentElement.children[0].children[0].attributes.src.value;
+
+    let mobileSplitPath = mobileImgSrc.split("")
+    setShowcaseContent(mobileImgSrc, mobileSplitPath);
+}
+
+
+const setShowcaseContent = (imgSrc, splitPath) => {
     let splitPathWoutExtension = splitPath.slice(0, imgSrc.length - 4);
     splitPathWoutExtension.push("-showcase/");
     let rightClickSourceFolder = splitPathWoutExtension.join("");
@@ -46,8 +62,8 @@ const getCurrentShowcase = (e) => {
     SHOWCASE_2.attributes.src.value = rightClickSourceFolder + 2 + ".png";
     SHOWCASE_3.attributes.src.value = rightClickSourceFolder + 3 + ".png";
     SHOWCASE_4.attributes.src.value = rightClickSourceFolder + 4 + ".png";
-
 }
+
 
 //trigger bootstrap modal #project-modal on right clicking project_Containers
 PROJECT_CONTAINER_1.addEventListener("contextmenu", (e) => getCurrentShowcase(e));
@@ -275,7 +291,6 @@ function scrollProjects(wheelIn) {
       nextProject("desktop");
   }
 
-  //TODO: maybe implement prev scroll
 }
 
 document.addEventListener('wheel', function(e) {
@@ -298,7 +313,7 @@ if (screenOrientation !== "portrait-primary" || screenOrientation !== "portrait-
    
 }
 
-//handle orientation change
+//handle orientation change FIXME: IOS not working
 window.addEventListener('orientationchange', function(e) {
 
     console.log(screen.orientation.type)
