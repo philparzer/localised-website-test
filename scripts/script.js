@@ -45,7 +45,7 @@ const getCurrentShowcase = (e) => {
 const getCurrentShowcaseMobile = (element) => {
     console.log(element)
     let mobileImgSrc; 
-    mobileImgSrc = element.parentElement.parentElement.children[0].children[0].attributes.src.value;
+    mobileImgSrc = element.parentElement.children[0].children[0].attributes.src.value;
 
     let mobileSplitPath = mobileImgSrc.split("")
     setShowcaseContent(mobileImgSrc, mobileSplitPath);
