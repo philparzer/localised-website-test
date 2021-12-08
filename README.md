@@ -1,6 +1,6 @@
 # https://philippparzer.com/
 
-My personal website features all of my current projects and functions as my primary portfolio. I tried building it without any frameworks to bolster my skills in pure JS. 
+My personal website features all of my current projects and functions as my primary portfolio. I am building it without any frameworks to bolster my skills in pure JS. 
 
 ## TODOs (v1.1)
 - [x] band-aid solution for landscape rotation
