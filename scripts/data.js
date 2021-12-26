@@ -30,7 +30,7 @@ const PROJECT_DESC = { //in descending display order
 
     threads: {
         title: "THREAD-SCRAPER",
-        en: " to inspect different kinds of tweets",
+        en: " to analyze different kinds of tweets",
         de: " zur Untersuchung verschiedener Arten von Tweets",
         ru: " для осмотра различных типов твитов",
         hrefLink: "https://github.com/philparzer/twitter-thread-analysis",
