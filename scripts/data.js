@@ -30,9 +30,9 @@ const PROJECT_DESC = { //in descending display order
 
     zebras: {
         title: "ZEBRAS",
-        en: " full-stack webapp + NFT collections",
-        de: " NFT-Kollektion mit 6 animierten Zebras",
-        ru: " коллекция анимированных зебр-NFT-токенов",
+        en: " full stack web app + NFT collections",
+        de: " Full-Stack-Web-Applikation + NFT-Kollektionen",
+        ru: " веб-приложение полного стека + коллекция NFT токенов",
         hrefLink: "https://www.zebras.at/",
         srcImg: "./img/zebra-pioneers.png",
         WIP: false
