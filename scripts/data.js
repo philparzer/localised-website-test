@@ -28,6 +28,17 @@ const TOOLTIP = {
 
 const PROJECT_DESC = { //in descending display order
 
+    zebras: {
+        title: "ZEBRAS",
+        en: " full-stack webapp + NFT collections",
+        de: " NFT-Kollektion mit 6 animierten Zebras",
+        ru: " коллекция анимированных зебр-NFT-токенов",
+        hrefLink: "https://www.zebras.at/",
+        srcImg: "./img/zebra-pioneers.png",
+        WIP: false
+    },
+
+
     threads: {
         title: "THREAD-SCRAPER",
         en: " to analyze different kinds of tweets",
@@ -46,16 +57,6 @@ const PROJECT_DESC = { //in descending display order
         ru: " 3D-печатные модификации для кровати «IKEA Hemnes»",
         hrefLink: "https://github.com/philparzer/ikea-hemnes-upgrades",
         srcImg: "./img/hemnes-upgrades.png",
-        WIP: false
-    },
-
-    zebras: {
-        title: "ZEBRA-PIONEERS",
-        en: " a NFT drop featuring 6 animated zebras",
-        de: " NFT-Kollektion mit 6 animierten Zebras",
-        ru: " коллекция анимированных зебр-NFT-токенов",
-        hrefLink: "https://opensea.io/collection/zebra-pioneers",
-        srcImg: "./img/zebra-pioneers.png",
         WIP: false
     },
 
