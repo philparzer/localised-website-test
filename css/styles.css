@@ -414,7 +414,7 @@ a{
     border: solid; 
     background-color: #FBD5D9; 
     border-width: .3em; 
-    border-radius: 2em; 
+    border-radius: 25px; 
     border-color: #FBD5D9;
   }
 
@@ -423,7 +423,7 @@ a{
     border: solid; 
     background-color: #FAFAFA; 
     border-width: .3em; 
-    border-radius: 2em; 
+    border-radius: 25px; 
     border-color: #FAFAFA;
   }
 

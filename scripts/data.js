@@ -27,6 +27,15 @@ const TOOLTIP = {
 
 
 const PROJECT_DESC = { //in descending display order
+    easter: {
+        title: "EASTER-EGGS",
+        en: " 3D printed scannable vouchers for local bubble tea store",
+        de: " 3D-gedruckte scannbare Gutscheine für einen lokalen Bubble Tea Store",
+        ru: " 3D-печатные купоны для бабли ти. Они можно сканировать.",
+        hrefLink: "https://easter-egg.vercel.app/",
+        srcImg: "./img/easter-egg.png", //TODO: add images
+        WIP: false
+    },
 
     zebras: {
         title: "ZEBRAS",
