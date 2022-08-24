@@ -133,7 +133,7 @@ const PROJECT_DESC = { //in descending display order
 
 
 const I_AM = {
-    en: ["eager to learn.", "a developer.", "a linguist.", "a translator.", "a creator.", "overthinking.", "23.", "in a hurry.", "a designer."],
-    de: ["wissbegierig.", "Entwickler.", "Linguist.", "Übersetzer.", "Creator.", "am Grübeln.", "23.", "in Eile.", "Designer."],
-    ru: ["— любопытный.", "— разработчик.", "— лингвист.","— переводчик.","— создатель.","— мечтатель.","— 23-летний студент.","— в спешке.", "— дизайнер."]
+    en: ["eager to learn.", "a developer.", "a linguist.", "a translator.", "a creator.", "overthinking.", "24.", "in a hurry.", "a designer."],
+    de: ["wissbegierig.", "Entwickler.", "Linguist.", "Übersetzer.", "Creator.", "am Grübeln.", "24.", "in Eile.", "Designer."],
+    ru: ["— любопытный.", "— разработчик.", "— лингвист.","— переводчик.","— создатель.","— мечтатель.","— 24-летний студент.","— в спешке.", "— дизайнер."]
 }
